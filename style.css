@@ -1,0 +1,257 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body, menu-tel, headline-subtext {
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+    font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+    font-size: 96px;
+}
+
+h2 {
+    font-size: 80px;
+    color: #9F0908;
+    padding: 120px 0 0 0;
+}
+
+h3 {
+    font-size: 56px;
+    font-weight: bold;
+    font-family: 'Economica', sans-serif;
+}
+
+.margin-bottom-16 {
+    margin-bottom: 16px;
+}
+
+.dpflex {
+    display: flex;
+}
+
+/*  Head Section begin */
+.section-head {
+    background-image: url('images/hero_bg.jpg');
+    display: block;
+    width: 100%;
+    height: 128vh;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+.head-img {
+    max-width: 100%;
+}
+
+.topbar {
+    height: 112px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.head-sakura-logo {
+    width: 64px;
+    height: 64px;
+    margin-left: 25px;
+}
+
+.menu-bar {
+    display: flex;
+    justify-content: flex-end;
+    gap: 32px;
+    width: 60%;
+    padding-right: 64px;
+}
+
+.menu-bar a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.menu-bar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.menu-tel {
+    display: flex;
+    background-color: #9f0908;
+    border: 1px solid white;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0;
+    cursor: pointer;
+    padding: 0 8px;
+    max-height: 32px;
+    align-items: center;
+}
+
+.phone-img {
+    max-width: 24px;
+    max-height: 24px;
+    position: relative;
+}
+
+.headline-container {
+    position: absolute;
+    width: 100%;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.headline {
+    font-weight: bold;
+    font-size: 96px;
+}
+
+/*  Head Section end */
+/* How to order Section begin */
+.section-how-to-order {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.how-to-order-headline {
+    text-align: center;
+    padding-bottom: 64px;
+}
+
+.order-parts {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    gap: 25px;
+    padding-bottom: 120px;
+}
+
+.order-parts div {
+    width: 256px;
+}
+
+.order-parts img {
+    width: 128px;
+    margin-bottom: 16px;
+}
+
+.order-parts div span {
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+/* How to order Section end */
+/* Our Menu Section begin */
+.section-our-menu {
+    background-image: url('images/section_our_menu_bg.jpg');
+    height: auto;
+    padding: 0 0 64px 0;
+}
+
+.our-menu-headline {
+    text-align: center;
+    padding-bottom: 64px;
+}
+
+.menu {
+    display: flex;
+    gap: 80px;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 56px;
+    align-items: center;
+}
+.our-menu-img {
+    max-width: 352px;
+    max-height: 352px;
+
+}
+
+table tr {
+    display: flex;
+    gap: 64px;
+}
+
+
+.dish-info {
+    width: 144px;
+    font-weight: bold;
+    font-size: 32px;
+    color: rgb(103, 94, 84);
+    margin-bottom: 8px;
+}
+/* Our Menu Section end */
+/* Find us at Section begin */
+.section-find-us-at {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.find-us-at-subtext {
+    padding-top: 8px;
+    padding-bottom: 64px;
+}
+
+.map-marker {
+    width: 24px;
+    height: 24px;
+}
+
+.map {
+    width: 100%;
+    height: 128vh;
+}
+/* Find us at Section end */
+/* footer begin */
+.section-footer {
+    height: 144px;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    width: 33%;
+    display: flex;
+}
+
+.sakura-logo {
+    height: 44px;
+    width: auto;
+}
+
+.space {
+    width: 33%;
+}
+
+.social-media {
+    display: flex;
+    justify-content: flex-end;
+    width: 34%;
+    gap: 16px;
+}
+
+.social-media a img {
+    width: 40px;
+    height: 40px;
+}
+/* footer end */
