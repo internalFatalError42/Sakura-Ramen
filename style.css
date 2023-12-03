@@ -71,6 +71,7 @@ h3 {
     gap: 32px;
     width: 60%;
     padding-right: 64px;
+    align-items: center;
 }
 
 .menu-bar a {
@@ -95,6 +96,7 @@ h3 {
     padding: 0 8px;
     max-height: 32px;
     align-items: center;
+    padding: 20px;
 }
 
 .phone-img {
@@ -222,7 +224,7 @@ table tr {
 /* footer begin */
 .section-footer {
     height: 144px;
-    background-color: black;
+    background-color: #0e1136;
     display: flex;
     justify-content: space-around;
     align-items: center;
