@@ -59,6 +59,11 @@ h3 {
     align-items: center;
 }
 
+.topbar .links {
+    display: flex;
+    gap: 32px;
+}
+
 .head-sakura-logo {
     width: 64px;
     height: 64px;
@@ -179,6 +184,11 @@ h3 {
     padding-bottom: 56px;
     align-items: center;
 }
+
+.menu:nth-child(3) {
+    flex-flow: row-reverse;
+}
+
 .our-menu-img {
     max-width: 352px;
     max-height: 352px;
@@ -256,3 +266,112 @@ table tr {
     height: 40px;
 }
 /* footer end */
+
+@media(max-width: 832px) {
+    .topbar .links { 
+        display: none;
+    }
+
+    .order-parts {
+        flex-direction: column;
+    }
+
+    .order-parts div {
+        width: 100%;
+    }
+
+    .our-menu-img {
+        max-width: 256px;
+        max-height: 256px;
+    }
+
+    h3 {
+        font-size: 48px;
+    }
+
+    .dish-info {
+        font-size: 24px;
+    }
+
+    table tr {
+        gap: 8px;
+    }
+
+    .menu {
+        justify-content: space-around;
+        gap: 0;
+    }
+
+    .menu div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu:nth-child(3) {
+        flex-flow: nowrap;
+    }
+}
+
+@media(max-width: 576px) {
+    h3 {
+        font-size: 32px;
+    }
+
+    .dish-info {
+        font-size: 16px;
+    }
+
+    .our-menu-img {
+        max-width: 128px;
+        max-height: 128px;
+    }
+
+    table tr {
+        gap: 0;
+    }
+
+    .sakura-logo {
+        height: 32px;
+    }
+
+    .social-media a img {
+        width: 32px;
+        height: 32px;
+    }
+
+    .section-footer {
+        height: 96px;
+    }
+}
+
+@media(max-width: 480px) {
+    .menu {
+        padding-left: 32px;
+        gap: 8px;
+    }
+
+    .our-menu-img {
+        max-width: 96px;
+        max-height: 96px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    .dish-info {
+        font-size: 12px;
+    }
+
+    table tr {
+        border-spacing: 0;
+        border-collapse: collapse;
+        padding: 0;
+        width: 256px;
+    }
+
+    .sakura-logo {
+        height: 24px;
+    }
+}
