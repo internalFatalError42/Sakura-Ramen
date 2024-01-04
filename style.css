@@ -219,6 +219,7 @@ table tr {
 .find-us-at-subtext {
     padding-top: 8px;
     padding-bottom: 64px;
+    text-align: center;
 }
 
 .map-marker {
@@ -314,6 +315,10 @@ table tr {
 }
 
 @media(max-width: 576px) {
+    h2 {
+        font-size: 64px;
+    }
+
     h3 {
         font-size: 32px;
     }
@@ -346,6 +351,10 @@ table tr {
 }
 
 @media(max-width: 480px) {
+    h2 {
+        font-size: 48px;
+    }
+
     .menu {
         padding-left: 32px;
         gap: 8px;
@@ -373,5 +382,38 @@ table tr {
 
     .sakura-logo {
         height: 24px;
+    }
+}
+
+@media(max-width: 416px) {
+    .headline {
+        font-size: 64px;
+    }
+
+    table tr {
+        width: 160px;
+    }
+    
+    .menu-tel {
+        padding: 8px;
+    }
+
+    .menu-bar a {
+        font-size: 16px;
+    }
+
+    .menu-bar {
+        padding-right: 32px;
+    }
+
+    .social-media {
+        flex-direction: column;
+        width: 4%;
+        gap: 0;
+    }
+
+    .social-media a img {
+        width: 16px;
+        height: 16px;
     }
 }
