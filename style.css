@@ -75,7 +75,6 @@ h3 {
     justify-content: flex-end;
     gap: 32px;
     width: 60%;
-    padding-right: 64px;
     align-items: center;
 }
 
@@ -122,6 +121,12 @@ h3 {
 .headline {
     font-weight: bold;
     font-size: 96px;
+}
+
+.language-toggle {
+    aspect-ratio: 3 / 2;
+    width: 48px;
+    padding-right: 16px;
 }
 
 /*  Head Section end */

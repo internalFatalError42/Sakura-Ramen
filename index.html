@@ -18,19 +18,20 @@
             <img class="head-sakura-logo" src="images/sakura_logo.png" alt="" class="src">
             <nav class="menu-bar">
                 <div class="links">
-                    <a href="#menu">MENU</a>
-                    <a href="#find_us_at">LOCATIONS</a>
-                    <a href="#about">ABOUT</a>
+                    <a id="link_menu" href="#menu">MENU</a>
+                    <a id="link_locations" href="#find_us_at">LOCATIONS</a>
+                    <a id="link_about" href="#about">ABOUT</a>
                 </div>
                 <a class="menu-tel" href="tel:017854564534">
                     <img class="phone-img" src="images/phone.png">
                     <p>017854564534</p>
                  </a>
             </nav>
+            <img class="language-toggle" id="language-toggle" onclick="javascript: toggleLanguage();" src="images/flag_ger.png" alt="language">
         </div>
         <div class="headline-container">
             <h1 class="headline">SAKURA RAMEN</h1>
-            <span class="headline-subtext">THE BEST RAMEN IN TOWN</span>
+            <span id="headline_subtext" class="headline-subtext">THE BEST RAMEN IN TOWN</span>
         </div>
     </section>
     <section class="section-how-to-order">
@@ -128,5 +129,28 @@
             <a><img src="images/instagrram_logo.png" alt=""></a>
         </nav>
     </footer>
+    <script>
+        function toggleLanguage() {
+            const languageToggle = document.getElementById('language-toggle');
+            if (languageToggle.src.includes('flag_ger.png')) {
+                languageToggle.src = 'images/flag_gb.png';
+                translate(0);
+            } else {
+                languageToggle.src = 'images/flag_ger.png';
+                translate(1);
+            }
+        }
+
+        function translate(langId) {
+            const location = document.getElementById('link_locations');
+            const about = document.getElementById('link_about');
+            const headline_subtext = document.getElementById('headline_subtext');
+            
+            // usw...
+            location.innerHTML = langId === 1 ? 'LOCATIONS' : 'STANDORTE';
+            about.innerHTML = langId === 1 ? 'ABOUT' : 'ÜBER UNS';
+            headline_subtext.innerHTML = langId === 1 ? 'THE BEST RAMEN IN TOWN' : 'DIE BESTEN RAMEN IN DER STADT';
+        }
+    </script>
 </body>
 </html>
